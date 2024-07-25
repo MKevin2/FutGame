@@ -1,0 +1,65 @@
+/* Cor de fundo */
+body{
+    background-color: #10181A;
+}
+
+/* Definindo os gradientes para a tela inicial, index*/
+#gradTop{
+    height: 101px;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(255, 255, 255));
+}
+
+#gradBottom{
+    height: 102px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255));
+}
+
+/* Definindo margem de todos os botões */
+button{
+    margin: .5%;
+}
+
+/* Persolização do Select com animação*/
+.slt1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: white;
+    font-weight: bold;
+    height: 37px;
+    margin-top: 4.2%;
+}
+
+.slt1:hover{
+    background-color: rgb(219, 219, 219);
+    color: #10181A;
+    transition: 800ms;   
+}
+
+/* Persolização das opções do Select*/
+option{
+    background-color: #10181A;
+    color: white;
+}
+
+/* Botões */
+.btn{
+ background-color: #10181A;
+ color: white;
+ border: 2px solid;
+ border-radius: 5px;
+ border-color: white;
+ font-weight: bold;
+ height: 38px;
+ margin-left: 1%;
+}
+
+
+
+/* Animação dos botões */
+.btn:hover{
+    background-color: white;
+    color: #10181A;
+    transition: 600ms;
+}

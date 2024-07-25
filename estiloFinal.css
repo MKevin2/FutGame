@@ -1,0 +1,54 @@
+/* Imagem de fundo */
+body{
+    background-image: url(img/futgame!.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/* Definindo os gradientes para tela de derrota */
+#gradLaranjaTop{
+    height: 71px;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(255, 164, 28));
+}
+
+#gradLaranjaBottom{
+    height: 71px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 164, 28));
+    margin-top: 0%;
+}
+
+/* Definindo os gradientes para tela de vitória */
+#gradVerdeTop{
+    height: 71px;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(20, 255, 51));
+}
+
+#gradVerdeBottom{
+    height: 71px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(20, 255, 51));
+    margin-top: 0%;
+}
+
+/* Definindo margem de todos os botões */
+button{
+    margin: .1%;
+}
+
+/* Botões */
+.btn{
+    background-color: #10181A;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: white;
+    font-weight: bold;
+    height: 38px;
+    margin-left: 1%;
+}
+    
+/* Animação dos botões */
+.btn:hover{
+    background-color: white;
+    color: #10181A;
+    transition: 600ms;
+}

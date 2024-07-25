@@ -1,0 +1,130 @@
+/* Cor de fundo */
+body{
+    background-color: #10181A;
+}
+
+/* Definindo os gradientes para a tela inicial, index*/
+#gradTop{
+    height: 94px;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(255, 255, 255));
+}
+
+#gradBottom{
+    height: 94px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255));
+}
+
+/* Ajustes na imagem central*/
+img{
+    margin-top: -5%;
+}
+
+/* Texto de informações */
+#text{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 25px;
+    text-align: justify;
+}
+
+/* Fundo dos corações */
+.painelVidas{
+    position: absolute;
+    width: 136px;
+    height: 9%;
+    padding: 10px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    border: solid 5px #10181A;
+    background-color: #fff; 
+}
+
+/* Posição dos corações */
+.vidas{
+    float: left;
+}
+
+/* Texto dentro do botão após a animação */
+a {
+    font-weight: bold;
+    color: #10181A;
+    text-decoration: none;
+}
+
+/* Deixando o texto centralizado */
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translate(-50%, -50%);
+}
+
+/* Fundo do botão */
+.h-button {
+    background-color: white;
+    padding: 8px;
+    width: 300px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.h-button span {
+  display: inline-block;
+  min-width: 0.3em;
+  text-transform: uppercase;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  opacity: 0;
+  transform: translate(0, -20px);
+}
+
+/* Texto dentro do botão antes de acontecer a animação de troca*/
+.h-button:before {
+  color: #10181A;
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+
+/* Animação de botão*/
+.h-button:hover:before, .h-button:focus:before {
+  opacity: 0;
+  transform: translate(0, 20px);
+}
+
+.h-button:hover span, .h-button:focus span {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.h-button:hover span:nth-child(1), .h-button:focus span:nth-child(1) {
+  transition-delay: 0.025s;
+}
+
+.h-button:hover span:nth-child(2), .h-button:focus span:nth-child(2) {
+    transition-delay: 0.05s;
+}
+
+.h-button:hover span:nth-child(3), .h-button:focus span:nth-child(3) {
+    transition-delay: 0.075s;
+}
+
+.h-button:hover span:nth-child(4), .h-button:focus span:nth-child(4) {
+    transition-delay: 0.1s;
+}
+
+.h-button:hover span:nth-child(5), .h-button:focus span:nth-child(5) {
+    transition-delay: 0.125s;
+}
+
+.h-button:hover span:nth-child(6), .h-button:focus span:nth-child(6) {
+    transition-delay: 0.15s;
+}

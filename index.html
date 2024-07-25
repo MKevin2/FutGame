@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutGame!</title>
+    <link rel="shortcut icon" href="img/icongame.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="estiloHome.css" rel="stylesheet">
+</head>
+
+<script>
+    /* Funcão para selecionar a dificuldade */
+    function IniciarJogo(){
+        var acesso = (document.getElementById('nivel').value);
+        if(acesso == ""){
+            alert("Selecione um Nível para começar!")
+        }else{
+            window.location.href = "jogo.html?" + acesso;
+        }
+    }
+</script>
+
+<body>
+
+<!-- Gradiente branco no topo da tela -->
+<div id="gradTop"></div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-center">
+
+                <!-- Imagem centralizada da logo do site -->
+                <img src="img/name.png" width="1050px" height="200px">
+            </div>
+        </div> 
+
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-center">
+
+                <!-- Ajusta o select conforme o texto, e também coloca um margin bottom 1 -->
+                <div class="mb-1">
+                    
+                    <!-- Oçpões do jogo -->
+                    <select class="slt1" id="nivel">
+                        <option id="opt" style="display: none;">Selecione o Nível</option>
+                        <option id="opt" value="Facil">Fácil</option>
+                        <option id="opt" value="Medio">Médio</option>
+                        <option id="opt" value="Dificil">Difícil</option>
+                    </select>
+
+                </div>
+
+                
+                <!-- Botões do lado do Select -->
+                <button type="button" class="btn" onclick="IniciarJogo()">Iniciar Jogo</button>
+                <button type="button" class="btn" onclick="window.location.href='comojogAR.html'">Como Jogar?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- Gradiente branco no final da tela -->
+<div id="gradBottom"></div>
+</body>
+</html>

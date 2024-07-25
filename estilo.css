@@ -1,0 +1,89 @@
+/* Adicionando cursor personalizado */
+Html{
+    cursor:url(img/cursor.png) 20 20, auto;
+}
+
+/* Imagem de fundo */
+body{
+    background-image: url(img/futgame!.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/* Tamanho menor */
+.ball01{
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+/* Tamanho médio */
+.ball02{
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+
+/* Maior tamanho */
+.ball03{
+    width: 90px;
+    height: 90px;
+    display: flex;
+}
+
+/* Lado natural */
+.ladoA{
+    transform:scaleX(1)
+}
+
+/* Lado invertido */
+.ladoB{
+    transform:scaleX(-1)
+}
+
+/* Fundo dos corações */
+.painelCrono{
+    position: absolute;
+    width: 136px;
+    height: 14%;
+    padding: 10px;
+    left: 0px;
+    top: 2%;
+    border: solid 5px #10181A;
+    background-color: #fff;
+    opacity: 0.7; 
+}
+
+/* Posição dos corações */
+.vidas{
+    float: left;
+}
+
+/* Tempo */
+.cronometro{
+    float: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Fundo da pontuação */
+.painelPont{
+    position: absolute;
+    width: 136px;
+    height: 10%;
+    padding: 10px;
+    left: 0px;
+    top: 15.2%;
+    border: solid 5px #10181A;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+/* Definindo gradiente no canto inferior da tela */
+#gradBrancoBottom{
+    height: 102px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255));
+    width: 121.8%;
+    margin-left: -11%;
+    margin-top: 378px;
+}
